@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 뷰포트 전체 높이를 차지하도록 */
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    gap: 30px; /* 이미지 사이 간격 */
+    margin-bottom: 30px;
+}
+
+img {
+    width: 200px; /* 이미지 너비 */
+    height: 200px; /* 이미지 높이 */
+    border-radius: 10px; /* 모서리를 둥글게 */
+    cursor: pointer; /* 마우스 오버 시 손가락 모양으로 변경 */
+    transition: transform 0.2s ease-in-out; /* 부드러운 확대 효과 */
+}
+
+img:hover {
+    transform: scale(1.05); /* 마우스 오버 시 약간 확대 */
+}
+
+#messageDisplay {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.8em;
+    color: #777;
+}
